@@ -15,11 +15,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
-    'name' => env('APP_NAME', 'Sistem Infomasi Perpustakaan'),
-=======
-    'name' => env('APP_NAME', 'Laravel'),
->>>>>>> 97ed3b48d82bc4a41e8196552fc7eb7a64bb4bf7
+    'name' => env('APP_NAME', 'Sistem Informasi Perpustakaan'),
 
     /*
     |--------------------------------------------------------------------------

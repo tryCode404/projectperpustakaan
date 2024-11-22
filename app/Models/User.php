@@ -2,11 +2,6 @@
 
 namespace App\Models;
 
-<<<<<<< HEAD
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-=======
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
->>>>>>> 97ed3b48d82bc4a41e8196552fc7eb7a64bb4bf7
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -25,6 +20,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'isAdmin', // Include isAdmin for mass assignment
     ];
 
     /**
@@ -45,12 +41,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-<<<<<<< HEAD
 
+    /**
+     * Define the relationship with the Profile model.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function profile()
     {
         return $this->hasOne(Profile::class, 'users_id');
     }
-=======
->>>>>>> 97ed3b48d82bc4a41e8196552fc7eb7a64bb4bf7
 }

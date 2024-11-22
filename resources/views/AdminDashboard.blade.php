@@ -1,6 +1,4 @@
 @extends('layouts.master')
-
-
 @section('sidebar')
 @include('part.sidebar')
 @endsection
@@ -93,7 +91,7 @@
                     <div class="col mr-2">
                         <div class="text-sm text-light font-weight-bold text-uppercase mb-1" style="font-size:0.8rem;">Riwayat Peminjamam</div>
                         <div class="h5 mb-0 mr-3 font-weight-bold text-light">{{ $jumlah_riwayat }}</div>
-                        <div class="button mt-2"><a href="#" class="text-light">Lihat</a></div>
+                        <div class="button mt-2"><a href="/peminjaman" class="text-light">Lihat</a></div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-user-tie fa-3x text-light"></i>

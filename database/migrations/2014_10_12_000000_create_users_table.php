@@ -16,13 +16,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-<<<<<<< HEAD
-            $table->boolean('isAdmin')->default(false);
+            $table->boolean('isAdmin')->default(false); // Menambahkan kolom isAdmin
             $table->string('password');
-=======
-            $table->string('password');
-            $table->rememberToken();
->>>>>>> 97ed3b48d82bc4a41e8196552fc7eb7a64bb4bf7
+            $table->rememberToken(); // Menambahkan rememberToken
             $table->timestamps();
         });
     }
