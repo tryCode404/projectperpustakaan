@@ -10,6 +10,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\CetakLaporanController;
 use App\Http\Controllers\PengembalianController;
 use App\Http\Controllers\RiwayatPinjamController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +42,5 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/pengembalian', [PengembalianController::class, 'pengembalian']);
 
     Route::get('/cetak-laporan', CetakLaporanController::class)->name('cetak.laporan');
+    Route::post('/password/email', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
 });
