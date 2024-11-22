@@ -39,4 +39,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/cetaklaporan', CetakLaporanController::class);
     Route::get('/pengembalian', [PengembalianController::class, 'index']);
     Route::post('/pengembalian', [PengembalianController::class, 'pengembalian']);
+
+    Route::get('/cetak-laporan', CetakLaporanController::class)->name('cetak.laporan');
 });
