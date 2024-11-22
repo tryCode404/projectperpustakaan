@@ -50,14 +50,14 @@
 
     .form-control {
         border-radius: 0 12px 12px 0;
-        border: 1px solid #ddd;
         padding: 10px 15px;
         font-size: 16px;
+        border: 1px solid #ddd;
     }
 
     .form-control:focus {
         border-color: #6B73FF;
-        box-shadow: 0px 0px 8px rgba(107, 115, 255, 0.5);
+        box-shadow: 0 0 8px rgba(107, 115, 255, 0.5);
     }
 
     .btn {
@@ -78,16 +78,8 @@
         background: linear-gradient(45deg, #000DFF, #6B73FF);
     }
 
-    .btn-info {
-        background-color: #6B73FF;
-        color: white;
-    }
-
-    .btn-info:hover {
-        background-color: #000DFF;
-    }
-
-    .text-center p a {
+    .text-center p a,
+    .forgot-password-link {
         color: #6B73FF;
         font-weight: bold;
         text-decoration: none;
@@ -95,7 +87,6 @@
 
     .form-check {
         margin-bottom: 20px;
-        /* Add spacing below the checkbox */
     }
 
     @keyframes fadeIn {
@@ -155,14 +146,16 @@
                 </div>
 
                 <!-- Remember Me Checkbox -->
-                <div class="form-check text-start">
+                <div class="form-check text-start" style="margin-top: 10px; margin-bottom: 0px;">
                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                     <label class="form-check-label" for="remember">Remember Me</label>
                 </div>
 
                 <!-- Buttons -->
                 <div class="form-group">
-                    <a href="{{ route('password.request') }}" class="btn btn-info mb-2"><i class="fa fa-lock"></i> Lupa Password?</a>
+                    <p class="forgot-password-link">
+                        <a href="{{ route('password.request') }}">Lupa Password?</a>
+                    </p>
                     <button type="submit" class="btn btn-success">Login</button>
                 </div>
 
