@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="{{ asset('/img/logo.png') }}" rel="icon">
+    <link href="{{ asset('img/logo.png') }}" rel="icon">
 
     <!-- Dynamic Title -->
     <title>@yield('title', 'Sistem Informasi Perpustakaan')</title>

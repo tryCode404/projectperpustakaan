@@ -4,7 +4,7 @@
     <div class="auth-box">
         <div class="text-center d-flex align-items-center justify-content-center">
             <span class="db mt-9">
-                <img src="{{ asset('template/images2/admin.png') }}" alt="logo" class="img-fluid" style="max-width: 200px; margin-bottom: 30px;" />
+                <img src="{{ asset('img/admin.png') }}" alt="logo" class="img-fluid" style="max-width: 200px; margin-bottom: 30px;" />
             </span>
             <div>
                 <h3 class="mt-8" style="color: #000000; font-weight: bold; padding-left: 130px;">Buat Akun Baru</h3>

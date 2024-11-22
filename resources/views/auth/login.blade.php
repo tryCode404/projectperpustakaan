@@ -106,7 +106,7 @@
     <div class="auth-box">
         <div id="loginform">
             <div class="text-center">
-                <img src="{{ asset('template/images2/admin.png') }}" alt="logo" />
+                <img src="{{ asset('img/admin.png') }}" alt="logo" />
                 <h3>Sistem Informasi Perpustakaan</h3>
                 <p>Silakan login untuk mengakses akun Anda</p>
             </div>
