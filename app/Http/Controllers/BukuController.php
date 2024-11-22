@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Buku;
 use App\Models\Profile;
 use App\Models\Kategori;
-use Illuminate\Http\File;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class BukuController extends Controller
